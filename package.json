@@ -1,0 +1,31 @@
+{
+  "name": "blue_md03_proj03",
+  "version": "1.0.0",
+  "description": "Marcelo A Santos - GH: _DJMarshallSantos_\r Felipe Santos - GH: _Felipe360flp_\r ###Tutores Turma 12 - 2022:\r Leo Ruiz - GH: _Leoruiz197_\r Maria Eduarda de Araújo Cardoso - GH: _dudahcardoso_",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DJMarshallSantos/blue_md03_proj03.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DJMarshallSantos/blue_md03_proj03/issues"
+  },
+  "homepage": "https://github.com/DJMarshallSantos/blue_md03_proj03#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.1"
+  }
+}
