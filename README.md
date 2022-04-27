@@ -2,13 +2,14 @@
 ## _Blue Ed Tech Projeto Extra, Turma 12 - 2022_
 ### Rick Morty 
 
-###Autores: 
-Marcelo A Santos - GH: _DJMarshallSantos_
-Felipe Santos - GH: _Felipe360flp_
-###Tutores Turma 12 - 2022:
-Leo Ruiz - GH: _Leoruiz197_
-Maria Eduarda de Araújo Cardoso - GH: _dudahcardoso_
-
+Autores: <br/>
+Marcelo A Santos - GH: _DJMarshallSantos_<br/>
+Felipe Santos - GH: _Felipe360flp_<br/>
+<br/>
+Tutores Turma 12 - 2022: <br/>
+Leo Ruiz - GH: _Leoruiz197_<br/>
+Maria Eduarda de Araújo Cardoso - GH: _dudahcardoso_<br/>
+<br/>
 ## Objetivo
 
 Desenvolver uma API totalmente do zero, que seja capaz de suprir o front-end apresentado a seguir.
@@ -30,59 +31,60 @@ Desenvolver uma API totalmente do zero, que seja capaz de suprir o front-end apr
 
 ### Características do Projeto
 
-- Tela de login:
-    _e-mail_ 
-    _senha_ 
-    _botão de login_
-    _botão de cadastro_
+- Tela de login:<br/>
+    _e-mail_ <br/>
+    _senha_ <br/>
+    _botão de login_<br/>
+    _botão de cadastro_<br/>
+<br/>
+- Tela de cadastro de usuários:<br/>
+    _campo nome_<br/>
+    _nome de usuário_ <br/>
+    _e-mail_<br/>
+    _senha_<br/>
+    _url de imagem de perfil_<br/>
+<br/>
+- Tela de personagens:<br/>
+    _visualizar todos os personagens_<br/>
+    _campo de pesquisa_<br/>
+    _botão adicionar_<br/>
+    _botão listar personagens_ <br/>
+    _botões laterais de navegação entre páginas_<br/>
+    _botão sair_<br/>
 
-- Tela de cadastro de usuários:
-    _campo nome_
-    _nome de usuário_ 
-    _e-mail_
-    _senha_
-    _url de imagem de perfil_
+- Tela de cadastro de personagens: <br/>
+    _campo nome_<br/>
+    _campo URL da imagem_<br/>
+    _botão adicionar personagem_<br/>
+<br/>
+- Tela de personagens by id:<br/>
+    _visualizar um único personagem_ <br/>
+    _botão editar personagem_<br/>
+    _botão remover personagem do banco de dados_<br/>
+    _botão editar_<br/>
+<br/>
+- Tela de edição:<br/>
+    _campo nome_<br/>
+    _campo URL da imagem_<br/>
+    _botão confirmar edicao_<br/>
+<br/>
+- Tela de exclusão de personagens:<br/>
+    _mensagem de confirmação_<br/>
+    _botão remover_<br/>
+    _botão cancelar_<br/>
+<br/>
+- Banco de dados:<br/>
+    _não relacional_<br/>
+    _hospedado no MongoDB Atlas_<br/>
+<br/>
+- Likns de entraga <br/>
+    _deploy Heroku_<br/>
+    _repositório GitHub_<br/>
+<br/>
+- Commits<br/>
+    _seguir padrão Conventional Commits_<br/>
 
-- Tela de personagens:
-    _visualizar todos os personagens_
-    _campo de pesquisa_
-    _botão adicionar_
-    _botão listar personagens_ 
-    _botões laterais de navegação entre páginas_
-    _botão sair_
-
-- Tela de cadastro de personagens: 
-    _campo nome_
-    _campo URL da imagem_
-    _botão adicionar personagem_
-
-- Tela de personagens by id:
-    _visualizar um único personagem_ 
-    _botão editar personagem_
-    _botão remover personagem do banco de dados_
-    _botão editar_
-
-- Tela de edição:
-    _campo nome_
-    _campo URL da imagem_
-    _botão confirmar edicao_
-
-- Tela de exclusão de personagens:
-    _mensagem de confirmação_
-    _botão remover_
-    _botão cancelar_
-
-- Banco de dados:
-    _não relacional_
-    _hospedado no MongoDB Atlas_
-
-- Likns de entraga 
-    _deploy Heroku_
-    _repositório GitHub_
-
-- Commits
-    _seguir padrão Conventional Commits_
-
+<br/>
 
 ## Tech
 

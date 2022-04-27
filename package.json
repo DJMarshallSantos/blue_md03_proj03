@@ -1,7 +1,7 @@
 {
   "name": "blue_md03_proj03",
   "version": "1.0.0",
-  "description": "Marcelo A Santos - GH: _DJMarshallSantos_\r Felipe Santos - GH: _Felipe360flp_\r ###Tutores Turma 12 - 2022:\r Leo Ruiz - GH: _Leoruiz197_\r Maria Eduarda de Araújo Cardoso - GH: _dudahcardoso_",
+  "description": "Rick and Morty API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/DJMarshallSantos/blue_md03_proj03.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Felipe Santos - GH: Felipe360flp/ Marcelo A Santos - GH: DJMarshallSantos ",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DJMarshallSantos/blue_md03_proj03/issues"
@@ -26,6 +26,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "mongoose": "^6.3.1"
+    "mongoose": "^6.3.1",
+    "swagger-ui-express": "^4.3.0"
   }
 }
