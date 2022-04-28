@@ -1,0 +1,304 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Rick and Morty API",
+    "description": "", 
+    "termsOfService": "",
+    "contact":"Felipe dos Santos Azevedo - Git: https://github.com/Felipe360flp / Marcelo Santos - Git: https://github.com/DJMarshallSantos",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5000/characters/all-characters",
+      "description": "API de teste"
+    },
+    {
+      "url": "ADD HEROKU!!!", 
+      "description": ""
+    }
+  ],
+  "paths": {
+    "/all-characters": {
+      "get": {
+        "summary": "Character List",
+        "description": "",
+        "tags": ["characters"],
+        "responses": {
+          "404": {
+            "description": "Not Found"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#models/rNmCharacters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/find/{id}": {
+      "get": {
+        "summary": "Get character with id",
+        "description": "",
+        "tags": ["character"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "$ref": "#models/rNmCharacters"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/single/{name}": {
+      "get": {
+        "summary": "",
+        "description": "",
+        "tags": ["character"],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "$ref": "#models/rNmCharacters"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/create": {
+      "post": {
+        "summary": "",
+        "description": "",
+        "tags": ["character"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#models/rNmCharacters"
+              },
+              "examples": {
+                "character": {
+                  "value": {
+                    "nome": "Rick Sanchez",
+                    "url": "https://rickandmortyapi.com/api/character/avatar/290.jpeg"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "$ref": "#models/rNmCharacters"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/update/{id}": {
+      "put": {
+        "summary": "",
+        "description": "",
+        "tags": ["character"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#models/rNmCharacters"
+              },
+              "examples": {
+                "character": {
+                  "value": {
+                    "nome": "Rick Sanchez",
+                    "url": "https://rickandmortyapi.com/api/character/avatar/290.jpeg"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "$ref": "#models/rNmCharacters"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/delete/{id}": {
+      "delete": {
+        "summary": "",
+        "description": "",
+        "tags": ["character"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#models/rNmCharacters"
+              },
+              "examples": {
+                "character": {
+                  "value": {
+                    "nome": "Rick Sanchez",
+                    "url": "https://rickandmortyapi.com/api/character/avatar/290.jpeg"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "$ref": "#models/rNmCharacters"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/characters/": {
+      "delete": {
+        "summary": "",
+        "description": "",
+        "tags": ["characters"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#models/rNmCharacters"
+              },
+              "examples": {
+                "character": {
+                  "value": {
+                    "nome": "Rick Sanchez",
+                    "url": "https://rickandmortyapi.com/api/character/avatar/290.jpeg"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/schemma"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+                   
+  }
+}
