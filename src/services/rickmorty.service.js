@@ -8,9 +8,8 @@ const characterByIdService = async (idParam) => {
     return await rNmCharacter.findById(idParam);
 };
 
-const characterByNameService = async (name) => {
-    return await rNmCharacter.filter((character) => character.name === name);
-
+const characterByNameService = async (nome) => {
+    return await rNmCharacter.findOne({ nome: nome });
 };
 
 const createCharacterService = async (newCharacter) => {

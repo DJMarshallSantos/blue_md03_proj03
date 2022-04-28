@@ -15,7 +15,7 @@ const characterByIdController = async (req, res) => {
 };
 
 const characterByNameController = async (req, res) => {
-    const chosenCharacter = await charactersService.characterByNameService(req.body.name);
+    const chosenCharacter = await charactersService.characterByNameService(req.params.name);
     if (!chosenCharacter) {
       return res.status(404).send({ message: 'Character not found!' });
     }
