@@ -34,7 +34,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#models/rNmCharacters"
+                    "$ref": "#/components/schemas/rNmCharacters"
                   }
                 }
               }
@@ -66,7 +66,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "$ref": "#models/rNmCharacters"
+                  "$ref": "#/components/schemas/rNmCharacters"
                 }
               }
             }
@@ -97,7 +97,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "$ref": "#models/rNmCharacters"
+                  "$ref": "#/components/schemas/rNmCharacters"
                 }
               }
             }
@@ -110,19 +110,11 @@
         "summary": "Add a new Rick and Morty Character",
         "description": "Route to create a new Rick and Morty Character",
         "tags": ["character"],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "required": true
-          }
-        ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#models/rNmCharacters"
+                "$ref": "#/components/schemas/rNmCharacters"
               },
               "examples": {
                 "character": {
@@ -145,7 +137,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "$ref": "#models/rNmCharacters"
+                  "$ref": "#/components/schemas/rNmCharacters"
                 }
               }
             }
@@ -170,7 +162,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#models/rNmCharacters"
+                "$ref": "#/components/schemas/rNmCharacters"
               },
               "examples": {
                 "character": {
@@ -193,7 +185,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "$ref": "#models/rNmCharacters"
+                  "$ref": "#/components/schemas/rNmCharacters"
                 }
               }
             }
@@ -218,7 +210,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#models/rNmCharacters"
+                "$ref": "#/components/schemas/rNmCharacters"
               },
               "examples": {
                 "character": {
@@ -241,7 +233,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "$ref": "#models/rNmCharacters"
+                  "$ref": "#/components/schemas/rNmCharacters"
                 }
               }
             }
@@ -254,19 +246,11 @@
         "summary": "Delete all Rick and Morty Characters",
         "description": "Route to delete all Rick and Morty Characters from the database",
         "tags": ["characters"],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "required": true
-          }
-        ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#models/rNmCharacters"
+                "$ref": "#/components/schemas/rNmCharacters"
               },
               "examples": {
                 "character": {
@@ -299,7 +283,21 @@
         }
       }
     }
-                   
+  },
+  "components": {
+    "schemas": {
+      "rNmCharacters": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        }
+      }
+    }
   }
 }
       
