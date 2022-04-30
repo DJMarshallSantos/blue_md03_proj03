@@ -10,11 +10,11 @@
   "servers": [
     {
       "url": "http://localhost:5000",
-      "description": "Rick and Morty API"
+      "description": "Rick and Morty Test API"
     },
     {
-      "url": "ADD HEROKU!!!", 
-      "description": ""
+      "url": "https://rickmorty-blue-api.onrender.com/api-docs", 
+      "description": "Rick and Morty Production API on Render"
     } 
   ],
   "paths": {
