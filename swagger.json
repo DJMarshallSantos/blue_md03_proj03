@@ -13,7 +13,7 @@
       "description": "Rick and Morty Test API"
     },
     {
-      "url": "https://rickmorty-blue-api.onrender.com/api-docs", 
+      "url": "https://rickmorty-blue-api.onrender.com/", 
       "description": "Rick and Morty Production API on Render"
     } 
   ],
