@@ -9,16 +9,16 @@
   },
   "servers": [
     {
-      "url": "http://localhost:5000/characters",
+      "url": "http://localhost:5000",
       "description": "Rick and Morty API"
     },
     {
       "url": "ADD HEROKU!!!", 
       "description": ""
-    }
+    } 
   ],
   "paths": {
-    "/all-characters": {
+    "/characters": {
       "get": {
         "summary": "List of all Rick and Morty Characters",
         "description": "Route to get all Rick and Morty Characters",
@@ -43,11 +43,11 @@
         }
       }
     },
-    "/find/{id}": {
+    "/characters/find/{id}": {
       "get": {
         "summary": "Get a single Rick and Morty Character by ID",
         "description": "Route to get a single Rick and Morty Character by ID",
-        "tags": ["character"],
+        "tags": ["characters"],
         "parameters": [
           {
             "name": "id",
@@ -74,11 +74,11 @@
         }
       }
     },
-    "/single/{name}": {
+    "/characters/search/{name}": {
       "get": {
         "summary": "Get a single Rick and Morty Character by name",
         "description": "Route to get a single Rick and Morty Character by name",
-        "tags": ["character"],
+        "tags": ["characters"],
         "parameters": [
           {
             "name": "name",
@@ -105,11 +105,11 @@
         }
       }
     },
-    "/create": {
+    "/characters/create": {
       "post": {
         "summary": "Add a new Rick and Morty Character",
         "description": "Route to create a new Rick and Morty Character",
-        "tags": ["character"],
+        "tags": ["characters"],
         "requestBody": {
           "content": {
             "application/json": {
@@ -145,11 +145,11 @@
         }
       }
     },
-    "/update/{id}": {
+    "/characters/update/{id}": {
       "put": {
         "summary": "Update a Rick and Morty Character by ID",
         "description": "Route to edit a Rick and Morty Character by ID",
-        "tags": ["character"],
+        "tags": ["characters"],
         "parameters": [
           {
             "name": "id",
@@ -193,11 +193,11 @@
         }
       }
     },
-    "/delete/{id}": {
+    "/characters/delete/{id}": {
       "delete": {
         "summary": "Delete a Rick and Morty Character by ID",
         "description": "Route to delete a Rick and Morty Character by ID",
-        "tags": ["character"],
+        "tags": ["characters"],
         "parameters": [
           {
             "name": "id",
@@ -241,7 +241,7 @@
         }
       }
     },
-    "/characters/": {
+    "/characters/delete-all": {
       "delete": {
         "summary": "Delete all Rick and Morty Characters",
         "description": "Route to delete all Rick and Morty Characters from the database",

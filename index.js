@@ -10,6 +10,6 @@ const port = process.env.PORT || 5000;
 connectToDatabase();
 app.use(express.json());
 app.use(cors());
-app.use('/characters', route);
+app.use('/', route);
 
 app.listen(port, () => console.log(`App running port ${port}`));
